@@ -134,6 +134,8 @@ function out($arg)
 		}
 
 		$(document).ready(function(){
+			let text = $('#text')[0].value;
+			countChars(text);
 			// считает количество символов и смс
 			$('#text').keyup(function(){
 				let text = $(this)[0].value;
